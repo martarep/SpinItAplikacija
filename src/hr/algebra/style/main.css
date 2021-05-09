@@ -1,0 +1,130 @@
+
+/* 
+    Created on : 17.10.2020., 00:16:48
+    Author     : MartaRep
+*/
+@font-face {
+    font-family: 'Mukta';
+    src: url('../resources/fonts/Mukta/Mukta-Medium.ttf');
+}
+
+.text {
+    -fx-font-family: "Mukta";
+    -fx-font-size: 17px;
+}
+
+#pnlStartScreen {
+    -fx-background-image: url(../resources/StartScreenBackground.png);
+    -fx-background-size: cover;
+}
+#pnlSettings, #pnlGameStart {
+    -fx-background-color: black;
+}
+.button {
+    -fx-background-color:#3a3846;
+    -fx-text-fill: #f8d4e7;
+    -fx-font-size: 17px;
+    -fx-font-family: "Mukta";
+    -fx-background-radius: 15px;
+}
+
+.button:hover {
+    -fx-background-color: #928eaf;
+}
+
+.button:pressed {
+    -fx-background-color: #3a3846;
+    -fx-scale-y: 1.1;
+    -fx-scale-x: 1.1;
+}
+
+.menu , .menu-bar{
+    -fx-background-color: #928eaf;
+    -fx-background-radius: 4px;
+    -fx-text-fill: #f8d4e7;
+    -fx-background: -fx-accent;
+}
+.menu .menu-item, .context-menu {
+
+    -fx-background-color:#9e9ab6; 
+    -fx-background-radius: 6px;
+}
+.menu .label {
+    -fx-text-fill: #f8d4e7;
+}
+
+
+.label{
+    -fx-text-fill: #a35a80;
+
+}
+
+.label .text {
+    -fx-font-size: 22px;
+
+}
+
+.menu .label .text{
+    -fx-font-size: 18px;
+}
+
+.text-field {
+    -fx-background-color: #c9c7d7;
+    -fx-font-size: 20px;
+    -fx-text-fill:#050304;
+    -fx-display-caret: false;
+}
+
+.text-field:focused { 
+    -fx-border-color: #050304;
+    -fx-display-caret: true;
+}
+
+.bg-black{
+    -fx-background-color: black;
+    -fx-font-size: 18px;
+}
+
+.switch {
+    -fx-text-fill: #a35a80;
+
+}
+.split-pane *.split-pane-divider {
+    -fx-border-color:  transparent;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+}
+
+
+.scroll-bar:vertical .increment-arrow,
+.scroll-bar:vertical .decrement-arrow{
+    -fx-shape : " ";    
+    -fx-padding :0.0 0.15em;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color :derive(black,90.0%);
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 2.0em; }
+
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color :derive(#4D4C4F,10.0%);
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 2.0em;
+}
+
+
+.scroll-bar:vertical .increment-button ,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 10.0 0.0 0.0;
+
+}
+#message .text{
+     -fx-text-fill: #a35a80;
+     -fx-font-size: 17px;
+}
+#tfMessage .text-field {
+         -fx-font-size: 17px;
+}

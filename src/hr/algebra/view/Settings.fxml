@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="pnlSettings" prefHeight="484.0" prefWidth="702.0" stylesheets="@../style/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.algebra.controller.SettingsController">
+   <children>
+      <Label layoutX="81.0" layoutY="81.0" stylesheets="@../style/main.css" text="Players" />
+      <MenuBar layoutX="-6.0" layoutY="-4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="101.0" stylesheets="@../style/main.css">
+        <menus>
+          <Menu mnemonicParsing="false" text="Menu">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#startGame" text="Play game" />
+                  <MenuItem mnemonicParsing="false" onAction="#deserialize" text="Continue playing" />
+                  <MenuItem mnemonicParsing="false" onAction="#serialize" text="Save Game" />
+                  <MenuItem mnemonicParsing="false" onAction="#createDocumentation" text="Create documentation" />
+            </items>
+          </Menu>
+        </menus>
+         <padding>
+            <Insets left="15.0" right="15.0" />
+         </padding>
+      </MenuBar>
+      <TextField fx:id="tfPlayersNumber" editable="false" layoutX="178.0" layoutY="77.0" prefHeight="44.0" prefWidth="42.0" />
+      <Label layoutX="82.0" layoutY="152.0" stylesheets="@../style/main.css" text="Games" />
+      <SplitPane dividerPositions="0.5" layoutX="82.0" layoutY="199.0" prefHeight="285.0" prefWidth="590.0" styleClass="bg-black">
+         <items>
+            <ScrollPane hbarPolicy="NEVER" prefHeight="258.0" prefWidth="272.0" styleClass="bg-black">
+               <content>
+                  <VBox fx:id="vbLeft" prefHeight="257.0" prefWidth="290.0" spacing="5.0" styleClass="bg-black" />
+               </content>
+            </ScrollPane>
+            <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" styleClass="bg-black">
+               <content>
+                  <VBox fx:id="vbRight" prefHeight="256.0" prefWidth="287.0" spacing="5.0" styleClass="bg-black" />
+               </content></ScrollPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

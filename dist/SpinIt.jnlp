@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="SpinIt.jnlp">
+  <information>
+    <title>SpinIt</title>
+    <vendor>MartaRep</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="SpinIt.jar" size="24768043" download="eager" />
+    <jar href="lib\chatservice.jar" size="674" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="SpinIt" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="hr.algebra.SpinIt"  name="SpinIt" >
+    <fx:param name="idPlayer" value="1"/>
+    <fx:param name="name" value="Marta"/>
+    <fx:param name="numberOfPlayers" value="2"/>
+  </jfx:javafx-desc>
+  <update check="always"/>
+</jnlp>
